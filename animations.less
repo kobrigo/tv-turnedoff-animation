@@ -1,0 +1,73 @@
+@import "animations-mixin";
+
+body {
+    background-color: black;
+}
+
+.myElement {
+    width: 400px;
+    height: 200px;
+    background-color: green;
+}
+
+.animated-element {
+    .animation(tvOff, 0.8s, ease);
+
+}
+
+@-webkit-keyframes tvOff {
+    0% {
+        transform: scale(1,1);
+    }
+
+//    50% {
+//        transform: scale(1, 0.005);
+//    }
+
+//    75% {
+//        transform: scaleY(0.001);
+//        transform: scaleX(0.001);
+//    }
+    50% {
+        transform: scale(0.8, 0.02);
+    }
+    100% {
+        transform: scale(0.005, 0.005);
+    }
+}
+
+@-webkit-keyframes tvOff {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(0.8, 0.02);
+    }
+    100% {
+        transform: scale(0.005, 0.005);
+    }
+}
+
+@-moz-keyframes tvOff {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(0.8, 0.02);
+    }
+    100% {
+        transform: scale(0.005, 0.005);
+    }
+}
+
+@keyframes tvOff {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(0.8, 0.02);
+    }
+    100% {
+        transform: scale(0.005, 0.005);
+    }
+}
